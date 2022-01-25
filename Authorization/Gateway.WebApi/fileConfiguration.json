@@ -1,0 +1,19 @@
+{
+    "Routes": [
+        {
+            "DownstreamPathTemplate": "/{catchAll}",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 4002
+                }
+            ],
+            "UpstreamPathTemplate": "/file/{catchAll}"
+        }
+    ],
+    "GlobalConfiguration": {
+        "BaseUrl": "http://localhost:4000"
+    }
+
+}

@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RuleSet Name="RegularDotNetProject" ToolsVersion="16.0">
+
+  <Rules AnalyzerId="Microsoft.Analyzers.ManagedCodeAnalysis" RuleNamespace="Microsoft.Rules.Managed">
+    <!-- CS1591: Missing XML comment for publicly visible type or member -->
+    <Rule Id="CS1591" Action="None" />
+    <!-- CS1701 & CS1702: Assuming assembly reference "Assembly Name #1" matches "Assembly Name #2", you may need to supply runtime policy -->
+    <Rule Id="CS1701" Action="None" />
+    <Rule Id="CS1702" Action="None" />
+  </Rules>
+
+  <Rules AnalyzerId="Microsoft.CodeQuality.Analyzers" RuleNamespace="Microsoft.CodeQuality.Analyzers">
+    <!-- CA1028: Enum storage should be Int32 -->
+    <Rule Id="CA1028" Action="None" />
+    <!-- CA1032: Implement standard exception constructors -->
+    <Rule Id="CA1032" Action="None" />
+    <!-- CA1054: URI parameters should not be strings -->
+    <Rule Id="CA1054" Action="None" />
+    <!-- CA1056: URI properties should not be strings -->
+    <Rule Id="CA1056" Action="None" />
+    <!-- CA1062: Validate arguments of public methods -->
+    <Rule Id="CA1062" Action="None" />
+    <!-- CA1303: Do not pass literals as localized parameters -->
+    <Rule Id="CA1303" Action="None" />
+    <!-- CA1304: Specify CultureInfo -->
+    <Rule Id="CA1304" Action="None" />
+    <!-- CA1305: Specify IFormatProvider -->
+    <Rule Id="CA1305" Action="None" />
+    <!-- CA1307: Specify StringComparison for clarity -->
+    <Rule Id="CA1307" Action="None" />
+    <!-- CA1308: Normalize strings to uppercase -->
+    <Rule Id="CA1308" Action="None" />
+    <!-- CA1707: Identifiers should not contain underscores -->
+    <Rule Id="CA1707" Action="None" />
+    <!-- CA1710: Identifiers should have correct suffix -->
+    <Rule Id="CA1710" Action="None" />
+    <!-- CA1724: The type name Reference conflicts in whole or in part with the namespace name -->
+    <Rule Id="CA1724" Action="None" />
+    <!-- CA1819: Properties should not return arrays -->
+    <Rule Id="CA1819" Action="None" />
+    <!-- CA2007: Do not directly await a Task -->
+    <Rule Id="CA2007" Action="None" />
+    <!-- CA2227: Collection properties should be read only -->
+    <Rule Id="CA2227" Action="None" />
+    <!-- CA2235: Mark all non-serializable fields -->
+    <Rule Id="CA2235" Action="None" />
+    <!-- CA5379: Do Not Use Weak Key Derivation Function Algorithm -->
+    <Rule Id="CA5379" Action="None" />
+  </Rules>
+
+  <Rules AnalyzerId="StyleCop.Analyzers" RuleNamespace="StyleCop.Analyzers">
+    <!-- SA0001: XML comments	-->
+    <Rule Id="SA0001" Action="None" />
+    <!-- SA1003: The spacing around an operator symbol is incorrect, within a C# code file. -->
+    <Rule Id="SA1003" Action="None" />
+    <!-- SA1009: A closing parenthesis within a C# statement is not spaced correctly -->
+    <Rule Id="SA1009" Action="None" />
+    <!-- SA1101: A call to an instance member of the local class or a base class is not prefixed with 'this.', within a C# code file -->
+    <Rule Id="SA1101" Action="None" />
+    <!-- SA1117: A closing attribute bracket within a C# element is not spaced correctly -->
+    <Rule Id="SA1117" Action="None" />
+    <!-- SA1118: A parameter must not span multiple lines -->
+    <Rule Id="SA1118" Action="None" />
+    <!-- SA1133: Each attribute should be placed in its own set of square brackets -->
+    <Rule Id="SA1133" Action="None" />
+    <!-- SA1309: A field name in C# begins with an underscore -->
+    <Rule Id="SA1309" Action="None" />
+    <!-- SA1503: The opening and closing braces for a C# statement have been omitted -->
+    <Rule Id="SA1503" Action="None" />
+    <!-- SA1516: Adjacent C# elements are not separated by a blank line -->
+    <Rule Id="SA1516" Action="None" />
+    <!-- SA1629: Documentation text should end with a period -->
+    <Rule Id="SA1629" Action="None" />
+    <!-- SA1633: A C# code file is missing a standard file header -->
+    <Rule Id="SA1633" Action="None" />
+  </Rules>
+
+</RuleSet>
