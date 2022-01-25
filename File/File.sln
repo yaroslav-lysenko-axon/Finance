@@ -1,0 +1,95 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "File.Application", "File.Application\File.Application.csproj", "{17A5566F-8763-418F-8553-B203278233F3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "File.Domain", "File.Domain\File.Domain.csproj", "{ED35028C-9020-41A3-8ECC-283AD93C49E8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Provisioning", "Provisioning", "{4EE66D96-6C48-4DFA-AB30-02AC8946531C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{E467FBC9-B667-4AE7-AA57-ABA2467AF77A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "minio-server", "minio-server", "{AC384866-CF29-430F-A439-FD4451D1CD20}"
+	ProjectSection(SolutionItems) = preProject
+		provisioning\minio-server\build.sh = provisioning\minio-server\build.sh
+		provisioning\minio-server\README.md = provisioning\minio-server\README.md
+		provisioning\minio-server\Dockerfile = provisioning\minio-server\Dockerfile
+		provisioning\minio-server\run-daemon.sh = provisioning\minio-server\run-daemon.sh
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "File.Domain.Tests", "File.Domain.Tests\File.Domain.Tests.csproj", "{1FF85723-2EDE-49B6-94BE-B5D2B3C3CE33}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{8A6A04FE-D05E-4A62-8E93-B3DD5433BE25}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "File.Infrastructure.Persistence", "File.Infrastructure.Persistence\File.Infrastructure.Persistence.csproj", "{EAFB56AF-95A4-4F5C-A73C-2290AFBF2631}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Database", "Database", "{6BF5360F-8403-46EE-A20F-2BDFD56C77B6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "File.Migrations", "File.Migrations\File.Migrations.csproj", "{45829B9D-143F-4CFF-BD79-7C1DDBA3D27B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "File.Infrastructure.Logging", "File.Infrastructure.Logging\File.Infrastructure.Logging.csproj", "{CA0D7694-5244-4917-9EDA-67152D15E86C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "app", "app", "{5DE5C4BD-AEA7-4C35-B511-29DC1865F61A}"
+	ProjectSection(SolutionItems) = preProject
+		provisioning\app\run.sh = provisioning\app\run.sh
+		provisioning\app\build.sh = provisioning\app\build.sh
+		provisioning\app\README.md = provisioning\app\README.md
+		provisioning\app\Dockerfile = provisioning\app\Dockerfile
+		provisioning\app\env.sh = provisioning\app\env.sh
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "postgres", "postgres", "{DB842F30-B68A-4361-B551-0D4A75CFF023}"
+	ProjectSection(SolutionItems) = preProject
+		provisioning\postgres\README.md = provisioning\postgres\README.md
+		provisioning\postgres\Dockerfile = provisioning\postgres\Dockerfile
+		provisioning\postgres\run-daemon.sh = provisioning\postgres\run-daemon.sh
+		provisioning\postgres\env.sh = provisioning\postgres\env.sh
+		provisioning\postgres\run-migrations.sh = provisioning\postgres\run-migrations.sh
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "File.Host", "File.Host\File.Host.csproj", "{274C5D67-48B0-4E43-9024-B58862C29D9C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{17A5566F-8763-418F-8553-B203278233F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17A5566F-8763-418F-8553-B203278233F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17A5566F-8763-418F-8553-B203278233F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17A5566F-8763-418F-8553-B203278233F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED35028C-9020-41A3-8ECC-283AD93C49E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED35028C-9020-41A3-8ECC-283AD93C49E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED35028C-9020-41A3-8ECC-283AD93C49E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED35028C-9020-41A3-8ECC-283AD93C49E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1FF85723-2EDE-49B6-94BE-B5D2B3C3CE33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1FF85723-2EDE-49B6-94BE-B5D2B3C3CE33}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1FF85723-2EDE-49B6-94BE-B5D2B3C3CE33}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1FF85723-2EDE-49B6-94BE-B5D2B3C3CE33}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EAFB56AF-95A4-4F5C-A73C-2290AFBF2631}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EAFB56AF-95A4-4F5C-A73C-2290AFBF2631}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EAFB56AF-95A4-4F5C-A73C-2290AFBF2631}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EAFB56AF-95A4-4F5C-A73C-2290AFBF2631}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45829B9D-143F-4CFF-BD79-7C1DDBA3D27B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45829B9D-143F-4CFF-BD79-7C1DDBA3D27B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45829B9D-143F-4CFF-BD79-7C1DDBA3D27B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45829B9D-143F-4CFF-BD79-7C1DDBA3D27B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA0D7694-5244-4917-9EDA-67152D15E86C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA0D7694-5244-4917-9EDA-67152D15E86C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA0D7694-5244-4917-9EDA-67152D15E86C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA0D7694-5244-4917-9EDA-67152D15E86C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{274C5D67-48B0-4E43-9024-B58862C29D9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{274C5D67-48B0-4E43-9024-B58862C29D9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{274C5D67-48B0-4E43-9024-B58862C29D9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{274C5D67-48B0-4E43-9024-B58862C29D9C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{AC384866-CF29-430F-A439-FD4451D1CD20} = {4EE66D96-6C48-4DFA-AB30-02AC8946531C}
+		{1FF85723-2EDE-49B6-94BE-B5D2B3C3CE33} = {E467FBC9-B667-4AE7-AA57-ABA2467AF77A}
+		{EAFB56AF-95A4-4F5C-A73C-2290AFBF2631} = {8A6A04FE-D05E-4A62-8E93-B3DD5433BE25}
+		{45829B9D-143F-4CFF-BD79-7C1DDBA3D27B} = {6BF5360F-8403-46EE-A20F-2BDFD56C77B6}
+		{CA0D7694-5244-4917-9EDA-67152D15E86C} = {8A6A04FE-D05E-4A62-8E93-B3DD5433BE25}
+		{5DE5C4BD-AEA7-4C35-B511-29DC1865F61A} = {4EE66D96-6C48-4DFA-AB30-02AC8946531C}
+		{DB842F30-B68A-4361-B551-0D4A75CFF023} = {4EE66D96-6C48-4DFA-AB30-02AC8946531C}
+	EndGlobalSection
+EndGlobal

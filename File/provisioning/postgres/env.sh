@@ -1,0 +1,10 @@
+POSTGRES_HOST=localhost; # doesn't influence run-daemon.sh, used only in run-migrations.sh
+POSTGRES_USER=postgres;
+POSTGRES_PASSWORD=changeme;
+POSTGRES_DB=referencefile;
+POSTGRES_SCHEMA=file;
+POSTGRES_PORT=5432;
+POSTGRES_DATA_DIR="$HOME"/postgres-data;
+POSTGRES_IMAGE_NAME="postgres:12.3-alpine";
+POSTGRES_CONTAINER_NAME="reference-file-postgres";
+MIGRATIONS_IMAGE_NAME="dotnet-reference-migrations";
